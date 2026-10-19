@@ -1,0 +1,99 @@
+/* Reset básico para unificar márgenes */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables de color de la paleta cálida */
+:root {
+  --color-fondo: #FAF5EF;       /* Blanco crema cálido */
+  --color-tarjeta: #FFFFFF;     /* Blanco puro para el contenedor */
+  --color-texto: #3A2E2B;       /* Café oscuro para lectura cómoda */
+  --color-primario: #C86D51;    /* Terracota / arcilla */
+  --color-secundario: #8C4A32;  /* Terracota oscuro para interacciones */
+  --color-borde: #E5D5C5;       /* Arena suave */
+}
+
+/* Estilos generales del cuerpo */
+body {
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  /* Tipografía Serif del sistema (Georgia / Palatino) */
+  font-family: Georgia, 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+  font-size: 18px;
+  line-height: 1.7;
+  padding: 40px 20px;
+}
+
+/* Contenedor principal para centrar y dar formato */
+.contenedor {
+  max-width: 750px;
+  margin: 0 auto;
+  background-color: var(--color-tarjeta);
+  padding: 40px;
+  border-radius: 12px;
+  border: 1px solid var(--color-borde);
+  box-shadow: 0 4px 15px rgba(58, 46, 43, 0.05);
+}
+
+/* Títulos principales h1 */
+h1 {
+  /* Tipografía con gracia clásica */
+  font-family: 'Times New Roman', Times, Georgia, serif;
+  font-size: 2.5rem;
+  color: var(--color-secundario);
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+/* Subtítulos h2 */
+h2 {
+  font-family: 'Times New Roman', Times, Georgia, serif;
+  font-size: 1.6rem;
+  color: var(--color-primario);
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+/* Párrafos */
+p {
+  font-family: Georgia, 'Palatino Linotype', Palatino, serif;
+  font-size: 1rem;
+  color: var(--color-texto);
+  margin-bottom: 20px;
+}
+
+/* Enlaces (Hipertexto) */
+a {
+  font-family: Georgia, serif;
+  color: var(--color-primario);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-secundario);
+  border-bottom-color: var(--color-secundario);
+}
+
+/* Estilo para imágenes */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+/* Pie de página */
+footer {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid var(--color-borde);
+  font-size: 0.9rem;
+  text-align: center;
+  color: #7A6963;
+}
